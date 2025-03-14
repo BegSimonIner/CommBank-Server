@@ -49,5 +49,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// 初始化种子数据
+await goalsService.SeedDataAsync();
+
 app.Run();
 
